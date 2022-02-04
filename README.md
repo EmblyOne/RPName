@@ -2,6 +2,9 @@
 
 # RPName
 RPName - the plugin that can change names of people for RP Servers and also have custom titles for RolePlay. RPName has more like 50 names!
+# In Game Screenshots
+![image](https://user-images.githubusercontent.com/69349110/152532714-3aa6723a-6380-4cf2-8fb2-a213bd0b25dc.png)
+![image](https://user-images.githubusercontent.com/69349110/152532728-f4815f85-aaa5-402d-a663-5579dd230edc.png)
 
 # Configs
 ```yaml

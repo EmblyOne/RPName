@@ -34,13 +34,13 @@ namespace RPName
             if(ev.NewRole.GetTeam() == Team.CHI && Plugin.config.classtitles.ContainsKey(ev.NewRole))
             {
                 int chaosrandom = rand.Next(1, Plugin.config.chaosnames.Count - 1); 
-                ev.Player.DisplayNickname = $"{Plugin.config.classtitles[ev.NewRole]} || {Plugin.config.chaosnames[chaosrandom]}"; 
+                ev.Player.DisplayNickname = $"{Plugin.config.classtitles[ev.NewRole]} | {Plugin.config.chaosnames[chaosrandom]}"; 
             } 
             if(ev.NewRole.GetTeam() == Team.MTF && Plugin.config.classtitles.ContainsKey(ev.NewRole))
             {
 
                 int mtfnamesrandom = rand.Next(1, Plugin.config.mtfnames.Count - 1);
-                ev.Player.DisplayNickname = $"{Plugin.config.classtitles[ev.NewRole]} || {Plugin.config.mtfnames[(mtfnamesrandom)]}";
+                ev.Player.DisplayNickname = $"{Plugin.config.classtitles[ev.NewRole]} | {Plugin.config.mtfnames[(mtfnamesrandom)]}";
             } 
             if(ev.NewRole == RoleType.Tutorial || ev.NewRole ==  RoleType.Spectator)
             {

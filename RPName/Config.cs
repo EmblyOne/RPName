@@ -84,5 +84,11 @@ namespace RPName
         public bool tutorialreset { get; set; } = true; 
         [Description("Names of people that will show(you can clear it and write your names)")]
         public List<string> names { get; set; }  = new List<string>() { "Michael", "Billy", "Alex", "Hood", "Crisper", "Noland", "Stewen", "Richard", "Neil", "James", "Jason", "Kevin", "Edward", "Marco", "Robert", "Willie", "Charis", "Tonny", "Anderson", "Josue", "Brian", "Oliver", "Jackson", "Darwin", "Kelvin", "Seven", "Shepard", "Azrael", "Leroy", "Mordechai", "Cal", "Franco", "Trent", "Blaise", "Coen", "Dominik", "Marley", "Davion", "Jeremias", "Jones", "Will", "Damir", "Dangelo", "Canaan", "Dion", "Landry", "Kody", "Gordon", "Colter", "Dayton", "Jad", "Rene", "Vance", "Duncan", "Frankie", "Jaxen", "Kyle", "Turner" };
+
+        [Description("The call signs for Mobile Task Force and Security Guards")]
+        public List<string> mtfnames { get; set; } = new List<string>() {"Neptune", "Streng", "Jupiter", "Jet", "Hellen", "Hunter", "William", "Arnold", "Robert", "Gregory", "Volfram", "Edward", "James", "Hood", "Brian", "Tonny", ""};
+
+        [Description("The call signs for Chaos Insurgency")]
+        public List<string> chaosnames { get; set; } = new List<string>() { "Michael", "Dmitriy", "Anton", "Vadim", "Oscar", "John", "William", "Marschal", "Edward", "Jason", "Volfram", "Kyle", "Neil", "Richard", "Billy"};
     }
 }

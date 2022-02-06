@@ -14,14 +14,14 @@ namespace RPName
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
         public void OnChangeRole(RoleChangeEvent ev)
         {
-          
+            Random rand = new Random();
             if (ev.NewRole.GetTeam() == Team.SCP && Plugin.config.classtitles.ContainsKey(ev.NewRole))
             {
                 ev.Player.DisplayNickname = Plugin.config.classtitles[ev.NewRole];
             }
             if (ev.NewRole.GetTeam() != Team.SCP && Plugin.config.classtitles.ContainsKey(ev.NewRole))
             {
-                Random rand = new Random();
+             
                 int randomname = rand.Next(1, Plugin.config.names.Count - 1);
                 ev.Player.DisplayNickname = Plugin.config.classtitles[ev.NewRole] + Plugin.config.names[(randomname)];
                 if (ev.NewRole == RoleType.ClassD)
@@ -33,11 +33,14 @@ namespace RPName
             } 
             if(ev.NewRole.GetTeam() == Team.CHI && Plugin.config.classtitles.ContainsKey(ev.NewRole))
             {
-                ev.Player.DisplayNickname = Plugin.config.classtitles[ev.NewRole]; 
+                int chaosrandom = rand.Next(1, Plugin.config.chaosnames.Count - 1); 
+                ev.Player.DisplayNickname = $"{Plugin.config.classtitles[ev.NewRole]} || {Plugin.config.chaosnames[chaosrandom]}"; 
             } 
             if(ev.NewRole.GetTeam() == Team.MTF && Plugin.config.classtitles.ContainsKey(ev.NewRole))
             {
-                ev.Player.DisplayNickname = Plugin.config.classtitles[ev.NewRole];
+
+                int mtfnamesrandom = rand.Next(1, Plugin.config.mtfnames.Count - 1);
+                ev.Player.DisplayNickname = $"{Plugin.config.classtitles[ev.NewRole]} || {Plugin.config.mtfnames[(mtfnamesrandom)]}";
             } 
             if(ev.NewRole == RoleType.Tutorial || ev.NewRole ==  RoleType.Spectator)
             {

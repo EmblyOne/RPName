@@ -105,4 +105,41 @@ names:
 - Jaxen
 - Kyle
 - Turner
+# The call signs for Mobile Task Force and Security Guards
+mtfnames:
+- Neptune
+- Streng
+- Jupiter
+- Jet
+- Hellen
+- Hunter
+- William
+- Arnold
+- Robert
+- Gregory
+- Volfram
+- Edward
+- James
+- Hood
+- Brian
+- Tonny
+- ''
+# The call signs for Chaos Insurgency
+chaosnames:
+- Michael
+- Dmitriy
+- Anton
+- Vadim
+- Oscar
+- John
+- William
+- Marschal
+- Edward
+- Jason
+- Volfram
+- Kyle
+- Neil
+- Richard
+- Billy
+
 ```
